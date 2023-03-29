@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    min-width: 334px;
+    background-color: cadetblue;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.container h3 {
+    justify-self: start;
+    color: white;
+    font-weight: 100;
+    text-shadow: 1px 1px 1px rgb(79, 79, 79);
+    margin-left: 1em;
+}
+
+.logoutbtn {
+    cursor: pointer;
+}
