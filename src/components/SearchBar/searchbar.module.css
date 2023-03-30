@@ -7,3 +7,23 @@
     padding-left: 10px;
     margin-top: 100px;
 }
+
+.searchbtn {
+    width: 100px;
+    background-color: rgb(246, 141, 13);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+}
+
+.searchbtn:hover {
+    transition: 500ms;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column
+}
