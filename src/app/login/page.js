@@ -1,12 +1,22 @@
 'use client'
-import React from "react";
+import { useSession } from 'next-auth/react';
+import React, {useEffect} from "react";
 import styles from './login.module.css';
 import Header from "../../components/Header/Header";
-import { useSession } from 'next-auth/react';
 import LoginButton from "@/components/LoginButton/LoginButton";
+import { useRouter } from "next/navigation";
 
 export default function Login(){
+    const router = useRouter()
     const {data: session} = useSession();
+
+    useEffect(()=>{
+      console.log(session)
+      if(session){
+          router.push('/');
+      }
+    }, [session])
+
     return(
         <div className={`${styles.container}`}>
         <Header/>

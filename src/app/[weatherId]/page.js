@@ -1,5 +1,5 @@
 'use client'
-import React, {use, useEffect} from "react";
+import React, {useEffect} from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
